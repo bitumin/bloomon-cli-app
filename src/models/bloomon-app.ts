@@ -5,7 +5,7 @@ import {FlowerCodeParser} from "../code-parsers/flower-code-parser";
 import {FlowerCodeQuantityMap} from "../interfaces/flower-code-quantity-map.interface";
 import {Flower} from "./flower";
 import {InputProcessor} from "../interfaces/input-processor.interface";
-import {UnexpectedAppSateError} from "../errors/unexpected-app-sate.error";
+import {UnexpectedAppStateError} from "../errors/unexpected-app-state.error";
 import {UnexpectedInputError} from "../errors/unexpected-input.error";
 import {NaiveBouquetSolver} from "../bouquet-solvers/naive-bouquet.solver";
 import {BouquetSolver} from "../interfaces/bouquet-solver.interface";
@@ -59,7 +59,7 @@ export class BloomonApp implements InputProcessor {
             return buildableBouquetSolution.bouquetToBeBuilt.code;
         }
 
-        throw new UnexpectedAppSateError();
+        throw new UnexpectedAppStateError();
     }
 
     private _isAppReadingBouquetSpecs(): boolean {
