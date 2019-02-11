@@ -1,13 +1,13 @@
 import {AppStates} from "../interfaces/app-states.interface";
-import {BouquetSpecCodeParser} from "../code-parsers/bouquet-spec-code-parser";
+import {BouquetSpecCodeParser} from "../code-parsers/bouquet-spec.code-parser";
 import {BouquetSpec} from "../interfaces/bouquet-spec.interface";
-import {FlowerCodeParser} from "../code-parsers/flower-code-parser";
+import {FlowerCodeParser} from "../code-parsers/flower.code-parser";
 import {FlowerCodeQuantityMap} from "../interfaces/flower-code-quantity-map.interface";
-import {Flower} from "./flower";
+import {Flower} from "../interfaces/flower.interface";
 import {InputProcessor} from "../interfaces/input-processor.interface";
 import {UnexpectedAppStateError} from "../errors/unexpected-app-state.error";
 import {UnexpectedInputError} from "../errors/unexpected-input.error";
-import {NaiveBouquetSolver} from "../bouquet-solvers/naive-bouquet.solver";
+import {NaiveBouquetSolver} from "../bouquet-solvers/naive.bouquet-solver";
 import {BouquetSolver} from "../interfaces/bouquet-solver.interface";
 
 

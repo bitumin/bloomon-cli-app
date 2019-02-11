@@ -1,6 +1,6 @@
 import {assert, expect} from 'chai';
 import 'mocha';
-import {FlowerCodeParser} from "../src/code-parsers/flower-code-parser";
+import {FlowerCodeParser} from "../src/code-parsers/flower.code-parser";
 import {InputValidationError} from "../src/errors/input-validator.error";
 
 describe('Flower code parser', () => {

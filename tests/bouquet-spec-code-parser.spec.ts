@@ -1,7 +1,7 @@
 import {assert, expect} from 'chai';
 import 'mocha';
 import {InputValidationError} from "../src/errors/input-validator.error";
-import {BouquetSpecCodeParser} from "../src/code-parsers/bouquet-spec-code-parser";
+import {BouquetSpecCodeParser} from "../src/code-parsers/bouquet-spec.code-parser";
 
 describe('Bouquet Spec code parser', () => {
     it('checks that a bouquet spec code has the right code structure', () => {

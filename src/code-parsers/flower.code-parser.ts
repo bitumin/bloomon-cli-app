@@ -1,6 +1,6 @@
 import {CodeParser} from "../interfaces/code-parser.interface";
 import {InputValidationError} from "../errors/input-validator.error";
-import {Flower} from "../models/flower";
+import {Flower} from "../interfaces/flower.interface";
 
 export class FlowerCodeParser implements CodeParser {
     parseCode(flowerCode: string): Flower {
