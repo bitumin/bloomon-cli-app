@@ -48,7 +48,7 @@ export class BloomonApp implements InputProcessor {
             return null;
         }
 
-        if (this._isAppReadingFlowers) {
+        if (this._isAppReadingFlowers()) {
             this._addFlowerToBuffer(this._flowerCodeParser.parseCode(newInputLine));
             const buildableBouquetSolution = this._bouquetSolver.solve(this._bouquetSpecsBuffer, this._flowersBuffer);
             if (buildableBouquetSolution === null) {
