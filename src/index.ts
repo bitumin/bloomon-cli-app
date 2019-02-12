@@ -2,7 +2,7 @@
 
 const readline = require('readline');
 import {InputProcessor} from "./interfaces/input-processor.interface";
-import {BloomonApp} from "./models/bloomon-app";
+import {BloomonApp} from "./input-processors/bloomon-app";
 
 const bloomonApp: InputProcessor = new BloomonApp();
 
